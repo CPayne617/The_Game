@@ -1,0 +1,21 @@
+.container{
+    border: solid black 1px 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+#gameboard{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+/* create 25 boxes */
+.box{
+    border: solid purple 1px;
+    height: 150px;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    
+}
