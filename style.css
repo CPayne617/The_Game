@@ -5,17 +5,42 @@
     flex-direction: column;
     display: flex;
 }
-#gameboard{
-    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+/* create 5 Categories */
+#gameboardC{
+    display: flex;
+    padding-bottom: .2%;
 }
-/* create 25 boxes */
-.box{
-    border: solid purple 1px;
+.category{
+    border: solid black 1px;
     height: 150px;
     width: 250px;
     justify-content: center;
     text-align: center;
-    
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    color: yellow;
+    font-size: xx-large;
+
+}
+/* create game board  */
+#gameboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+/* create 25 boxes */
+.box{
+    border: solid black 1px;
+    height: 150px;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: blue;
+    color: yellow;
+    font-size: xx-large;
 }
